@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="eventRegistrationForm">
+        <h1 align="center">Event Registration Form</h1>
+        <form action="/submit-form" method="post">
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="contact no.">Phone number</label>
+            <input type="text" id="phone number" name="number" required>
+        </div>
+        <div class="form-group">
+            <label for="event">Language</label>
+            <select id="event" name="event" required>
+                <option value="">Please select an language</option>
+                <option value="conference">Hindi</option>
+                <option value="workshop">English</option>
+                <option value="seminar">Spanish</option>
+                <option value="seminar">Arabic</option>
+                <option value="seminar">Russian</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="event">Select Event:</label>
+            <select id="event" name="event" required>
+                <option value="">Please select an event</option>
+                <option value="conference">Wedding ceremony</option>
+                <option value="workshop">Birthday party</option>
+                <option value="seminar">Anniversary</option>
+                <option value="seminar">Ring ceremony</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="event">Select Ticket type</label>
+            <select id="event" name="event" required>
+                <option value="">Please select an Ticket type</option>
+                <option value="conference">Standard</option>
+                <option value="workshop">VIP</option>
+                <option value="seminar">Group</option>
+                <option value="seminar">other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">I agree to the terms and conditions.</label>
+        </div>
+        <button type="submit">Register</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
